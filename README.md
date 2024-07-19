@@ -79,28 +79,3 @@ symfony serve
 Если команда symfony не распознается, установите Symfony CLI, следуя инструкциям на официальном сайте.
 
 Теперь ваше приложение будет доступно по адресу http://localhost:8000.
-
------------------------
-Пример всех команд в одном блоке:
-
-Для удобства ниже приведены все команды в одном блоке:
-
-# Клонирование репозитория
-git clone  https://github.com/magamlag/symfony-booker.git
-cd symfony-booker
-
-# Установка зависимостей
-composer install
-
-# Настройка окружения
-cp .env.example .env
-nano .env  # Редактирование файла для настройки подключения к базе данных
-
-# Создание базы данных (в PostgreSQL)
-psql -U db_user -c "CREATE DATABASE db_name;"
-
-# Запуск миграций
-php bin/console doctrine:migrations:migrate
-
-# Запуск сервера Symfony
-symfony serve
