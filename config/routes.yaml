@@ -1,0 +1,35 @@
+# config/routes.yaml
+api_authors_create:
+    path: /api/authors
+    controller: App\Controller\AuthorController::create
+    methods: [POST]
+
+api_authors_list:
+    path: /api/authors
+    controller: App\Controller\AuthorController::list
+    methods: [GET]
+
+api_books_create:
+    path: /api/books
+    controller: App\Controller\BookController::create
+    methods: [POST]
+
+api_books_list:
+    path: /api/books
+    controller: App\Controller\BookController::list
+    methods: [GET]
+
+api_books_view:
+    path: /api/books/{id}
+    controller: App\Controller\BookController::view
+    methods: [GET]
+
+api_books_update:
+    path: /api/books/{id}
+    controller: App\Controller\BookController::update
+    methods: [PUT, PATCH]
+
+api_books_search:
+    path: /api/books/search
+    controller: App\Controller\BookController::search
+    methods: [GET]
